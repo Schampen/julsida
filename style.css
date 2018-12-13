@@ -1,0 +1,124 @@
+html {
+    margin: 0 auto;
+    padding: 0;
+    background-color: #063607;
+}
+
+main {
+    margin-top: 10vh;
+    width: 90%;
+    margin-left: 5%;
+}
+
+
+.navbar {
+    width: 100%;
+    background-color: #dde3e9;
+    overflow: auto;
+}
+
+div.navbar img {
+    width: 40px;
+    height: auto;
+    float: right;
+    margin-right: 20px;
+}
+  
+.navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: #063607;
+    text-decoration: none;
+    font-size: 17px;
+    border-right: 1px solid #000;
+}
+
+.navbar a:last-child {
+    border-right: none;
+}
+  
+.navbar a:hover {
+    background-color: #000;
+    color: #dde3e9;
+}
+  
+.active {
+    background-color: #ce0b0b;
+}
+  
+ @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+}
+
+.fa {
+    color: #063607;
+}
+
+.navbar a:hover i {
+    color: #dde3e9
+}  
+
+.box {
+    position: relative;
+    box-shadow: 20px 40px 60px rgba(0, 0, 0, .5);
+    padding: 10px;
+    background: #ce0b0b;
+    height: 80vh;
+    border-radius: 20px;
+}
+  
+
+
+div.box img {
+    width: 96px;
+    height: auto;
+    float: right;
+}
+
+.knit {
+    margin-top: 80%;
+}
+  
+.box::after {
+    content: '';
+    position: absolute;
+    z-index: -1; 
+    box-shadow: 0 25px 30px rgba(0, 0, 0, 0.3); 
+    width: 70%; 
+    left: 15%; /* one half of the remaining 30% */
+    height: 100px;
+    bottom: 0;
+}
+ 
+.box2 {
+    position: relative;
+    box-shadow: 20px 40px 60px rgba(0, 0, 0, .5);
+    padding: 10px;
+    background: #dde3e9;
+    height: 80vh;
+    border-radius: 20px;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+}
+  
+.box2 img {
+    width: 100%;
+    border: 1px solid #000;
+    border-style: inset;
+}
+  
+.box2::after {
+    content: '';
+    position: absolute;
+    z-index: -1; 
+    box-shadow: 0 25px 30px rgba(0, 0, 0, 0.3); 
+    width: 70%; 
+    left: 15%; /* one half of the remaining 30% */
+    height: 100px;
+    bottom: 0;
+}
+  
